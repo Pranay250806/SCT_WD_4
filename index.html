@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+
+        <h1>TO-DO LIST</h1>
+        <p class="subtitle">Organize Your Tasks</p>
+
+        <!-- Add Task Section -->
+        <div class="task-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+            >
+
+            <div class="date-time">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+            </div>
+
+            <button id="addTaskBtn">Add Task</button>
+
+        </div>
+
+        <!-- Task Filters -->
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter" data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Task List -->
+        <div class="task-list" id="taskList"></div>
+
+        <!-- Empty Message -->
+        <p id="emptyMessage" class="empty-message">
+            No tasks added yet.
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
